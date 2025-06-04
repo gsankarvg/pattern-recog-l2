@@ -1,0 +1,25 @@
+Q4. steps to compute the Euclidean distance between two grayscale images.
+
+a) Read the Images
+    Load both grayscale images into arrays (e.g., using OpenCV, PIL, or matplotlib).
+
+b) Ensure Same Size
+    Check that both images have the same dimensions. If not, resize or crop them as needed.
+
+c) Flatten the Images
+    Convert each 2D image array into a 1D vector (using img.flatten()).
+
+d) Compute the Difference
+    Subtract one image vector from the other to get the difference vector.
+
+e) Square the Differences
+    Square each element of the difference vector.
+
+f) Sum the Squares
+    Add up all the squared differences. 
+
+g) Take the Square Root
+    Compute the square root of the sum to get the Euclidean distance.
+
+*****************************************************************************************************************************************************
+
