@@ -23,3 +23,19 @@ g) Take the Square Root
 
 *****************************************************************************************************************************************************
 
+Q1. For face recognition on the ORL dataset using LDA (Linear Discriminant Analysis) for dimensionality reduction, the typical workflow is:
+
+Steps:
+Load the ORL dataset (images and labels).
+Flatten images into 1D vectors.
+Split the data into training and testing sets.
+Apply LDA to reduce dimensionality.
+Train a classifier (e.g., K-Nearest Neighbors, SVM, Logistic Regression) on the reduced features.
+Evaluate performance (accuracy, confusion matrix, etc.).
+
+
+lda = LinearDiscriminantAnalysis(n_components=min(len(np.unique(y_train))-1, X_train.shape[1]))
+This line creates an LDA model with the maximum allowed number of components (up to n_classes - 1 or the number of features),
+ensuring optimal dimensionality reduction for the data.
+
+*****************************************************************************************************************************************************
